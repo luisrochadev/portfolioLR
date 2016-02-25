@@ -1,0 +1,95 @@
+/* force scrollbar */
+html {
+  overflow-y: scroll; 
+}
+
+
+
+body {
+  padding-top: 2%;
+  padding-left: .5%;
+  padding-right: .5%;
+  font-family: 'Roboto Slab', serif;
+}
+
+
+
+button {
+
+  height: 40px;
+  width: 100px;
+  margin: 10px auto 10px;
+  background: #000;
+  font-size: 0.8125rem;
+  color: #fff;
+  cursor: pointer;
+  border-color: transparent;
+  border-style: inset;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+button:focus {
+	background-color: #000;
+}
+
+button:hover {
+	color: #9c9c9c;
+}
+
+/*.button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}*/
+
+h4,
+h5{
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-family: 'Roboto Slab', serif;
+}
+
+.brandName {
+  margin: 10px;
+}
+
+.social {
+	margin: 10px;
+}
+.social > a {
+  padding: 5px;
+  color: #000;
+  margin: 
+}
+.social > a:hover {
+	color: #9c9c9c;
+}
+
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  padding: 1%;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.footer-text{
+	font-size: 10px;
+}

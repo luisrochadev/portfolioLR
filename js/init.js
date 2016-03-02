@@ -10,6 +10,7 @@ $(function () {
     while (divs.length) {
         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }
+
 });
 
 
@@ -18,18 +19,8 @@ $(function () {
 // external js: isotope.pkgd.js, imagesloaded.pkgd.js
 
 $(document).ready( function() {
-  // init Isotope
-  var $grid = $('.grid').isotope({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    masonry: {
-      columnWidth: '.grid-item'
-    }
-  });
-  // layout Isotope after each image loads
-
-
-    // bind filter button click
+    
+       // bind filter button click
   $('.filters-button-group').on( 'click', 'button', function() {
     var filterValue = $( this ).attr('data-filter');
     // use filterFn if matches value
@@ -43,6 +34,22 @@ $(document).ready( function() {
       $buttonGroup.find('.is-checked').removeClass('is-checked');
       $( this ).addClass('is-checked');
     });
+  }); 
+
+  // init Isotope
+  var $grid = $('.grid').isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      columnWidth: '.grid-sizer'
+    }
   });
+  // layout Isotope after each image loads
+ $grid.imagesLoaded().progress( function() {
+    $grid.isotope('layout');
+
+  });  
+
+
 
 });

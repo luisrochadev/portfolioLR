@@ -22,7 +22,7 @@ $(document).ready( function() {
   var $grid = $('.grid').isotope({
     itemSelector: '.grid-item',
     percentPosition: true,
-    masonry: {
+    packery: {
       columnWidth: '.grid-sizer'
     }
   });

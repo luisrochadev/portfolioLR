@@ -1,15 +1,24 @@
-  $(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
+$(document).ready(function(){
+    //launch contact modal
+  $('.modal-trigger').leanModal();
   });
 
-
-$(function () {
+  // randomize order of images
+  $(function () {
     var parent = $(".grid");
     var divs = parent.children();
     while (divs.length) {
         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }
+
+  // image hover effect  
+  $(function() {
+    $('.grid-item').hover(function() { 
+    $(this).css("opacity", "0.85");
+    }, function(){
+    $(this).css("opacity", "1");
+    });
+    });
 
 });
 
@@ -19,8 +28,29 @@ $(function () {
 // external js: isotope.pkgd.js, imagesloaded.pkgd.js
 
 $(document).ready( function() {
+
+      //launch contact modal
+  $('.modal-trigger').leanModal();
+  });
+
+  // randomize order of images
+  $(function () {
+    var parent = $(".grid");
+    var divs = parent.children();
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+
+  // image hover effect  
+  $(function() {
+    $('.grid-item').hover(function() { 
+    $(this).css("opacity", "0.85");
+    }, function(){
+    $(this).css("opacity", "1");
+    });
+    });
     
-       // bind filter button click
+  // bind filter button click
   $('.filters-button-group').on( 'click', 'button', function() {
     var filterValue = $( this ).attr('data-filter');
     // use filterFn if matches value

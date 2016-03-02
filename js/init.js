@@ -22,8 +22,8 @@ $(document).ready( function() {
   var $grid = $('.grid').isotope({
     itemSelector: '.grid-item',
     percentPosition: true,
-    isotope: {
-      columnWidth: '.grid-sizer'
+    masonry: {
+      columnWidth: '.grid-item'
     }
   });
   // layout Isotope after each image loads

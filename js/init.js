@@ -1,30 +1,3 @@
-$(document).ready(function(){
-    //launch contact modal
-  $('.modal-trigger').leanModal();
-  });
-
-  // randomize order of images
-  $(function () {
-    var parent = $(".grid");
-    var divs = parent.children();
-    while (divs.length) {
-        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-    }
-
-  // image hover effect  
-  $(function() {
-    $('.grid-item').hover(function() { 
-    $(this).css("opacity", "0.85");
-    }, function(){
-    $(this).css("opacity", "1");
-    });
-    });
-
-});
-
-
-
-
 // external js: isotope.pkgd.js, imagesloaded.pkgd.js
 
 $(document).ready( function() {
@@ -32,6 +5,13 @@ $(document).ready( function() {
       //launch contact modal
   $('.modal-trigger').leanModal();
   });
+
+  $(".button-collapse").sideNav();
+  
+  // $('.button').on('click', function() {
+  //   ('.button-collapse').sideNav('hide');
+  // });
+
 
   // randomize order of images
   $(function () {
@@ -51,7 +31,7 @@ $(document).ready( function() {
     });
     
   // bind filter button click
-  $('.filters-button-group').on( 'click', 'button', function() {
+  $('.filters-button-group').on( 'click', '.button', function() {
     var filterValue = $( this ).attr('data-filter');
     // use filterFn if matches value
     filterValue =  filterValue;
@@ -60,7 +40,7 @@ $(document).ready( function() {
   // change is-checked class on buttons
   $('.button-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.on( 'click', '.button', function() {
       $buttonGroup.find('.is-checked').removeClass('is-checked');
       $( this ).addClass('is-checked');
     });

@@ -8,9 +8,6 @@ $(document).ready( function() {
 
   $(".button-collapse").sideNav();
   
-  // $('.button').on('click', function() {
-  //   ('.button-collapse').sideNav('hide');
-  // });
 
 
   // randomize order of images

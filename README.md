@@ -1,6 +1,6 @@
 Luis Rocha Photography
 ========
-Personal photography portfolio 
+I previously hosted my photography portfolio on Squarespace, but seeing as how I'm a web developer now it seemed like a cardinal sin to not showcase my photos on a page I made from scratch! I wanted to create a modern, minimalistic page that showed off my best work in an easy to use and aeshtetically pleasing page. 
 
 ![screenshot](http://i.imgur.com/nET4wnu.jpg)
 

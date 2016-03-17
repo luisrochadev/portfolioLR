@@ -8,4 +8,4 @@ Using Isotope, I was able to provide an essay way to view all photos in my portf
 
 In order to keep things looking fresh , I created a function that shuffles around the order of my images on each visit.  
 
-The site is mobile optimized featuring a slide out side menu for small and largee sized devices.
+The site is mobile optimized featuring a slide out side menu for small and large sized devices.

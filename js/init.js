@@ -18,14 +18,14 @@ $(document).ready( function() {
         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }
 
-  // image hover effect  
-  $(function() {
-    $('.grid-item').hover(function() { 
-    $(this).css("opacity", "0.85");
-    }, function(){
-    $(this).css("opacity", "1");
-    });
-    });
+  // // image hover effect  
+  // $(function() {
+  //   $('.grid-item').hover(function() { 
+  //     $(this).css("opacity", "0.85");
+  //   }, function(){
+  //     $(this).css("opacity", "1");
+  //   });
+  // });
     
   // bind filter button click
   $('.filters-button-group').on( 'click', '.button', function() {
@@ -54,7 +54,6 @@ $(document).ready( function() {
   // layout Isotope after each image loads
  $grid.imagesLoaded().progress( function() {
     $grid.isotope('layout');
-
   });  
 
 

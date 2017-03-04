@@ -1,11 +1,34 @@
-Luis Rocha Photography
-========
-I previously hosted my photography portfolio on Squarespace, but seeing as how I'm a web developer now it seemed like a cardinal sin to not showcase my photos on a page I made from scratch! I wanted to create a modern, minimalistic page that showed off my best work in an easy to use and aeshtetically pleasing page. 
+<div align="center">
+<p>
+<img src="http://luisrochadev.com/assets/img/logo.png" width="250"/>
+</p>
 
-![screenshot](http://i.imgur.com/nET4wnu.jpg)
 
-Using Isotope, I was able to provide an essay way to view all photos in my portfolio as well as sort them by category. This is all done within a cascading grid layout powered by Masonry. 
+<p>✨ <strong>Luisrochaphoto.com</strong> is my personal photography portfolio, showcasing my best work in the most flattering way. ✨</p>
 
-In order to keep things looking fresh , I created a function that shuffles around the order of my images on each visit.  
+<p><a href="http://luisrochaphoto.com" class="btn btn-primary btn-md">Launch Page</a></p>
+</div>
 
-The site is mobile optimized featuring a slide out side menu for small and large sized devices.
+---
+## Features
+* 🔩 <strong>Simple: </strong> Single page portfolio based on [Isotope.js](http://isotope.metafizzy.co/) for fast filtering.
+
+* 💪 <strong>Powerful: </strong> Optimized front-end performance and focused on SEO.
+
+* 📱 <strong>Responsive: </strong> Made for a beautiful experience across all devices using [Materialize](http://materializecss.com/). 
+
+* 🎉 <strong>Live: </strong> Deployed with [GitHub Pages](https://pages.github.com/) fo free!
+
+## Demo
+<div align="center">
+  <img src="http://i.imgur.com/NN2MDYj.jpg"/>
+</div>
+
+
+
+
+## Improvements
+- [ ] Full redesign with strogner focus on SEO
+- [ ] Re-write image filtering based on Angular
+- [ ] Sort out image pre-loding for optimized performance
+
